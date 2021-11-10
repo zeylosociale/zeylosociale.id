@@ -44,15 +44,15 @@ export default function Hero() {
               <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
                 <Button
                   rounded={'full'}
-                  bg={'blue.400'}
+                  bg={'green.400'}
                   color={'white'}
                   _hover={{
-                    bg: 'blue.500'
+                    bg: 'green.500'
                   }}
                 >
-                  Create Project
+                  Whatsapp
                 </Button>
-                <Button rounded={'full'}>How It Works</Button>
+                <Button rounded={'full'}>Cara Order</Button>
               </Stack>
             </Stack>
           </Flex>
