@@ -1,4 +1,5 @@
 import React from 'react';
+import NextLink from 'next/link';
 import {
   Box,
   Button,
@@ -15,21 +16,25 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import Logo from '../components/Logo';
 
-const Links = ['Home', 'Layanan', 'Cara Order', 'Kontak', 'Tentang Kami'];
+const Links = [
+  { title: 'Home', href: '/' },
+  { title: 'About', href: '/about' }
+];
 
-const NavLink = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700')
-    }}
-    href={'#'}
-  >
-    {children}
-  </Link>
+const NavLink = ({ href, title }) => (
+  <NextLink href={href} as={href}>
+    <Link
+      px={2}
+      py={1}
+      rounded={'md'}
+      _hover={{
+        textDecoration: 'none',
+        bg: useColorModeValue('gray.200', 'gray.700')
+      }}
+    >
+      {title}
+    </Link>
+  </NextLink>
 );
 
 export default function Navbar() {
@@ -56,8 +61,8 @@ export default function Navbar() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}
             >
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {Links.map((link, index) => (
+                <NavLink key={index} href={link.href} title={link.title} />
               ))}
             </HStack>
           </HStack>
@@ -69,8 +74,8 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {Links.map((link, index) => (
+                <NavLink key={index} href={link.href} title={link.title} />
               ))}
             </Stack>
           </Box>
