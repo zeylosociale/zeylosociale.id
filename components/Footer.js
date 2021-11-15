@@ -1,5 +1,6 @@
 import React from 'react';
-import Logo from '../components/Logo'
+import Logo from '../components/Logo';
+import NextLink from 'next/link';
 import {
   Box,
   Container,
@@ -9,7 +10,6 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react';
-
 
 const ListHeader = ({ children }) => {
   return (
@@ -35,40 +35,41 @@ export default function Footer() {
               <Logo color={useColorModeValue('gray.700', 'white')} />
             </Box>
             <Text fontSize={'sm'}>
-              © Made by ssembara. All rights reserved
+              © {new Date().getFullYear()} Made by Zeylosociale. All rights
+              reserved
             </Text>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Product</ListHeader>
-            <Link href={'#'}>Overview</Link>
-            <Link href={'#'}>Features</Link>
-            <Link href={'#'}>Tutorials</Link>
-            <Link href={'#'}>Pricing</Link>
-            <Link href={'#'}>Releases</Link>
-          </Stack>
-          <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About</Link>
-            <Link href={'#'}>Press</Link>
-            <Link href={'#'}>Careers</Link>
-            <Link href={'#'}>Contact</Link>
-            <Link href={'#'}>Partners</Link>
-          </Stack>
-          <Stack align={'flex-start'}>
-            <ListHeader>Support</ListHeader>
-            <Link href={'#'}>Help Center</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Legal</Link>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Status</Link>
+            <ListHeader>Menu</ListHeader>
+            <NextLink href={'/'} as={'/'}>
+              <Link href={'#'}>Home</Link>
+            </NextLink>
+            <NextLink href={'/product'} as={'/'}>
+              <Link href={'#'}>Product</Link>
+            </NextLink>
+            <NextLink href={'/order'} as={'/'}>
+              <Link href={'#'}>Order</Link>
+            </NextLink>
+            <NextLink href={'/about'} as={'/'}>
+              <Link href={'#'}>About</Link>
+            </NextLink>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Follow Us</ListHeader>
-            <Link href={'#'}>Facebook</Link>
-            <Link href={'#'}>Twitter</Link>
-            <Link href={'#'}>Dribbble</Link>
-            <Link href={'#'}>Instagram</Link>
-            <Link href={'#'}>LinkedIn</Link>
+            <Link
+              href={'https://www.instagram.com/zeylosociale.id/'}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </Link>
+            <Link
+              href={'https://wa.me/6282335179753'}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Whatsapp
+            </Link>
           </Stack>
         </SimpleGrid>
       </Container>

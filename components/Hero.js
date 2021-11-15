@@ -55,6 +55,7 @@ export default function Hero() {
                   bg={'green.400'}
                   color={'white'}
                   _hover={{
+                    textDecoration: 'none',
                     bg: 'green.500'
                   }}
                 >

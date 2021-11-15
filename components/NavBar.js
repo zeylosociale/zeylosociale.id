@@ -17,7 +17,7 @@ import Logo from '../components/Logo';
 
 const Links = [
   { title: 'Home', href: '/' },
-  { title: 'Produk', href: '/product' },
+  { title: 'Product', href: '/product' },
   { title: 'Order', href: '/order' },
   { title: 'About', href: '/about' }
 ];
