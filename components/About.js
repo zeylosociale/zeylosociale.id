@@ -79,9 +79,6 @@ const About = () => {
             tags={[
               'Zeylosociale',
               'Sosial Media',
-              'Instagram',
-              'TikTok',
-              'Shopee'
             ]}
           />
           <Heading marginTop="1">
