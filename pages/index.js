@@ -1,6 +1,3 @@
-import React from 'react';
-import NextLink from 'next/link';
-import { PhoneIcon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
@@ -12,10 +9,19 @@ import {
   Link,
   useBreakpointValue
 } from '@chakra-ui/react';
+import { PhoneIcon } from '@chakra-ui/icons';
+import NextLink from 'next/link';
+import Head from 'next/head';
+import React from 'react';
+
 
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Zeylosociale.id - Jasa Optimasi Sosial Media Terbaik</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Box>
         <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
           <Flex p={8} flex={1} align={'center'} justify={'center'}>

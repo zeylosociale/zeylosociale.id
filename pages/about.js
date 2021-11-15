@@ -1,15 +1,14 @@
+import { Box, Heading, Container, Text, Stack } from '@chakra-ui/react';
+import Head from 'next/head';
 import React from 'react';
-import {
-  Box,
-  Heading,
-  Container,
-  Text,
-  Stack,
-} from '@chakra-ui/react';
 
 export default function About() {
   return (
     <>
+      <Head>
+        <title>About - Zeylosociale.id</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Container maxW={'container.xl'}>
         <Stack
           as={Box}

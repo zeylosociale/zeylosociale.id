@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Accordion,
   AccordionButton,
@@ -10,10 +9,16 @@ import {
   Heading,
   Stack
 } from '@chakra-ui/react';
+import Head from 'next/head';
+import React from 'react';
 
 export default function Order() {
   return (
     <>
+      <Head>
+        <title>Order - Zeylosociale.id</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Container maxW={'container.xl'}>
         <Stack
           as={Box}

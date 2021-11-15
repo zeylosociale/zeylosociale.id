@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Box,
   Button,
@@ -11,10 +10,13 @@ import {
   Tab,
   TabPanels,
   TabPanel,
-  TabList
+  TabList,
+  Link
 } from '@chakra-ui/react';
-
 import ProductCard from '../components/ProductCard';
+import Head from 'next/head';
+import React from 'react';
+
 
 const Product = () => {
   const image = {
@@ -71,6 +73,10 @@ const Product = () => {
   ];
   return (
     <>
+      <Head>
+        <title>Product - Zeylosociale.id</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Container maxW={'container.xl'}>
         <Stack
           as={Box}
@@ -117,16 +123,22 @@ const Product = () => {
           </SimpleGrid>
           <Center p={5}>
             <Box pt={7}>
-              <Button
-                rounded={'full'}
-                bg={'green.400'}
-                color={'white'}
-                _hover={{
-                  bg: 'green.500'
-                }}
+              <Link
+                href={'https://wa.me/6282335179753'}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Beli Sekarang
-              </Button>
+                <Button
+                  rounded={'full'}
+                  bg={'green.400'}
+                  color={'white'}
+                  _hover={{
+                    bg: 'green.500'
+                  }}
+                >
+                  Beli Sekarang
+                </Button>
+              </Link>
             </Box>
           </Center>
           <Center>
