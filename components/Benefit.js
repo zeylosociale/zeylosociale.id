@@ -9,7 +9,7 @@ import {
   useColorModeValue,
   Center
 } from '@chakra-ui/react';
-import { faAngleDoubleUp, faAngleRight, faCoffee, faCreditCard, faKey, faMoneyBillWaveAlt } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleUp, faCreditCard, faKey, faMoneyBillWaveAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react';
 
@@ -68,7 +68,7 @@ const TestimonialText = ({ children }) => {
   );
 };
 
-const BenefitIcon = ({ src, name, title }) => {
+const BenefitIcon = ({ title }) => {
   return (
     <Flex align={'center'} mt={8} direction={'column'}>
       <Stack spacing={-1} align={'center'}>

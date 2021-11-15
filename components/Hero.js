@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
 import NextLink from 'next/link';
 import React from 'react';
 
@@ -50,7 +50,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
               >
                 <Button
-                  leftIcon={<FontAwesomeIcon icon={faWhatsapp} size="lg" />}
+                  leftIcon={<FontAwesomeIcon icon={faWhatsappSquare} size="lg" />}
                   rounded={'full'}
                   bg={'green.400'}
                   color={'white'}
