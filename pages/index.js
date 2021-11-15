@@ -9,10 +9,13 @@ import {
   Link,
   useBreakpointValue
 } from '@chakra-ui/react';
-import { PhoneIcon } from '@chakra-ui/icons';
+
+import Benefit from '../components/Benefit';
 import NextLink from 'next/link';
 import Head from 'next/head';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 
 export default function Index() {
@@ -20,7 +23,7 @@ export default function Index() {
     <>
       <Head>
         <title>Zeylosociale.id - Jasa Optimasi Sosial Media Terbaik</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon2.ico" />
       </Head>
       <Box>
         <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
@@ -37,14 +40,14 @@ export default function Index() {
                     position: 'absolute',
                     bottom: 1,
                     left: 0,
-                    bg: 'blue.400',
+                    bg: '#D8AF55',
                     zIndex: -1
                   }}
                 >
                   Kembangakan
                 </Text>
                 <br />{' '}
-                <Text color={'blue.400'} as={'span'}>
+                <Text color={'#D8AF55'} as={'span'}>
                   Bisnis dan Sosmedmu Bersama Kami
                 </Text>{' '}
               </Heading>
@@ -55,7 +58,7 @@ export default function Index() {
                   rel="noopener noreferrer"
                 >
                   <Button
-                    leftIcon={<PhoneIcon />}
+                    leftIcon={<FontAwesomeIcon icon={faWhatsapp} size="lg"/>}
                     rounded={'full'}
                     bg={'green.400'}
                     color={'white'}
@@ -82,6 +85,9 @@ export default function Index() {
             />
           </Flex>
         </Stack>
+      </Box>
+      <Box>
+        <Benefit/>
       </Box>
     </>
   );

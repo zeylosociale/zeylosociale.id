@@ -7,7 +7,7 @@ export default function About() {
     <>
       <Head>
         <title>About - Zeylosociale.id</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon2.ico" />
       </Head>
       <Container maxW={'container.xl'}>
         <Stack
@@ -21,7 +21,7 @@ export default function About() {
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
             as={'u'}
-            color={'blue.400'}
+            color={'#D8AF55'}
           >
             TENTANG ZEYLOSOCIALE.ID
           </Heading>
