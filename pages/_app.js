@@ -2,6 +2,7 @@ import { ChakraProvider, extendTheme  } from "@chakra-ui/react"
 import Footer from "../components/Footer"
 import Navbar from "../components/NavBar"
 
+
 const colors = {
   brand: {
     900: "#1a365d",

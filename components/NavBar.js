@@ -12,12 +12,12 @@ import {
   useColorMode,
   Stack
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import Logo from '../components/Logo';
 
 const Links = [
   { title: 'Home', href: '/' },
+  { title: 'Produk', href: '/product' },
   { title: 'Order', href: '/order' },
   { title: 'About', href: '/about' }
 ];
