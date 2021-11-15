@@ -1,7 +1,11 @@
+import "@fortawesome/fontawesome-svg-core/styles.css"; 
+import { config } from "@fortawesome/fontawesome-svg-core";
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import Footer from '../components/Footer';
 import Navbar from '../components/NavBar';
 import Head from 'next/head';
+
+config.autoAddCss = false;
 
 const colors = {
   brand: {
