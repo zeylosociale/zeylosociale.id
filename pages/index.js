@@ -1,7 +1,9 @@
 import Benefit from '../components/Benefit';
+import About from '../components/About';
 import Hero from '../components/Hero';
 import Head from 'next/head';
 import React from 'react';
+
 
 export default function Index() {
   return (
@@ -12,6 +14,7 @@ export default function Index() {
       </Head>
       <Hero />
       <Benefit />
+      <About />
     </>
   );
 }
