@@ -69,7 +69,7 @@ export default function Index() {
     <>
       <Head>
         <title>Zeylosociale.id - Jasa Optimasi Sosial Media Terbaik</title>
-        <link rel="icon" href="/favicon2.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
       <Benefit />

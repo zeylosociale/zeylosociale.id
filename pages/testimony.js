@@ -16,7 +16,7 @@ const Testimony = ({ testimonies }) => {
     <>
       <Head>
         <title>Testimony - Zeylosociale.id</title>
-        <link rel="icon" href="/favicon2.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container maxW={'container.xl'}>
         <Stack
