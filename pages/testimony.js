@@ -52,7 +52,7 @@ export async function getStaticProps() {
     method: 'GET'
   });
   const testimonies = await res.json();
-  if (!data) {
+  if (!testimonies) {
     return {
       notFound: true
     };
