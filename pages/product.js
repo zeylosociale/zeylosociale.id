@@ -127,7 +127,7 @@ const Product = () => {
           <Center p={5}>
             <Box pt={7}>
               <Link
-                href={'https://wa.me/6282335179753'}
+                href={'https://wa.me/6285850648664'}
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -7,7 +7,8 @@ import {
   Box,
   Container,
   Heading,
-  Stack
+  Stack,
+  Link
 } from '@chakra-ui/react';
 import Head from 'next/head';
 import React from 'react';
@@ -49,9 +50,19 @@ export default function Order() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                Hubungi kami via whatsapp untuk konfirmasi terkait layanan yang
-                anda minati. Kami akan mengirimkan pricelist lengkap untuk
-                memudahkan anda dalam memilih layanan kami.
+                Hubungi kami via{' '}
+                <Box as={'span'}>
+                  <Link
+                    href={'https://wa.me/6285850648664'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Whatsapp
+                  </Link>
+                </Box>{' '}
+                untuk konfirmasi terkait layanan yang anda minati. Kami akan
+                mengirimkan pricelist lengkap untuk memudahkan anda dalam
+                memilih layanan kami.
               </AccordionPanel>
             </AccordionItem>
 
