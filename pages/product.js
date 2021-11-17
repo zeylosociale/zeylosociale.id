@@ -147,6 +147,7 @@ const Product = () => {
                 <Tab>Informasi Followers Instagram Indonesia</Tab>
                 <Tab>Informasi Followers TikTok Indonesia</Tab>
                 <Tab>Informasi Followers Shopee</Tab>
+                {/* <Tab>Cara Order Dan Ketentuan Lain</Tab> */}
               </TabList>
               <TabPanels>
                 <TabPanel>
@@ -191,6 +192,15 @@ const Product = () => {
                     <li>Bisa digunakan untuk akun baru</li>
                   </ol>
                 </TabPanel>
+                {/* <TabPanel>
+                  <ol>
+                    <li>Layanan followers Shopee</li>
+                    <li>Masuk bertahap, jadi selesai tergantung orderan</li>
+                    <li>Estimasi selesai : Normal 1-3</li>
+                    <li>Tidak butuh Akses Login</li>
+                    <li>Bisa digunakan untuk akun baru</li>
+                  </ol>
+                </TabPanel> */}
               </TabPanels>
             </Tabs>
           </Center>

@@ -23,11 +23,19 @@ function MyApp({ Component, pageProps }) {
     <>
       <ChakraProvider theme={theme}>
         <Navbar />
+        <Head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+        </Head>
         <NextSeo
           openGraph={{
             type: 'article',
             locale: 'id_ID',
-            title: 'Jual Followers Instagram - Aktif Indonesia - Zeylosociale.id',
+            title:
+              'Jual Followers Instagram - Aktif Indonesia - Zeylosociale.id',
             description:
               'Jasa optimasi sosial media untuk mengembangkan bisnis anda. Jual followers Instagram, 1000 Followers cuma 85.000 Rupiah, tanpa password. Real Aktif Indonesia. dapatkan layanan lain hanya di website kami',
             url: 'https://zeylosociale.com',
