@@ -27,7 +27,7 @@ const Testimony = ({ testimonies }) => {
         >
           <Title word="TESTIMONI ZEYLOSOCIALE.ID" />
           <Wrap px="1rem" spacing={4} justify="center">
-            {testimonies.map((data, index) => (
+            {/* {testimonies.map((data, index) => (
               <WrapItem
                 key={index}
                 boxShadow="base"
@@ -39,7 +39,7 @@ const Testimony = ({ testimonies }) => {
               >
                 <Image src={data} height={600} width={400} alt={data} />
               </WrapItem>
-            ))}
+            ))} */}
           </Wrap>
         </Stack>
       </Container>
@@ -47,22 +47,22 @@ const Testimony = ({ testimonies }) => {
   );
 };
 
-export async function getStaticProps() {
-  const res = await fetch('https://zeylosociale.vercel.app/api/testimonies', {
-    method: 'GET'
-  });
-  const testimonies = await res.json();
-  if (!data) {
-    return {
-      notFound: true
-    };
-  }
+// export async function getStaticProps() {
+//   const res = await fetch('https://zeylosociale.vercel.app/api/testimonies', {
+//     method: 'GET'
+//   });
+//   const testimonies = await res.json();
+//   if (!data) {
+//     return {
+//       notFound: true
+//     };
+//   }
 
-  return {
-    props: {
-      testimonies
-    }
-  };
-}
+//   return {
+//     props: {
+//       testimonies
+//     }
+//   };
+// }
 
 export default Testimony;
