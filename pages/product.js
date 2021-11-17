@@ -1,4 +1,9 @@
 import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
   Box,
   Button,
   Container,
@@ -6,17 +11,15 @@ import {
   Heading,
   SimpleGrid,
   Stack,
-  Tabs,
-  Tab,
-  TabPanels,
-  TabPanel,
-  TabList,
-  Link
+  Text,
+  Link,
+  OrderedList,
+  UnorderedList,
+  ListItem
 } from '@chakra-ui/react';
 import ProductCard from '../components/ProductCard';
 import Head from 'next/head';
 import React from 'react';
-
 
 const Product = () => {
   const image = {
@@ -141,69 +144,174 @@ const Product = () => {
               </Link>
             </Box>
           </Center>
-          <Center>
-            <Tabs variant="soft-rounded" colorScheme="green" mt={'30'}>
-              <TabList>
-                <Tab>Informasi Followers Instagram Indonesia</Tab>
-                <Tab>Informasi Followers TikTok Indonesia</Tab>
-                <Tab>Informasi Followers Shopee</Tab>
-                {/* <Tab>Cara Order Dan Ketentuan Lain</Tab> */}
-              </TabList>
-              <TabPanels>
-                <TabPanel>
-                  <ol>
-                    <li>
-                      Penjelasan dibawah ini untuk layanan Followers Instagram
-                      Indonesia (Username Indonesia)
-                    </li>
-                    <li>
-                      Kualitas akun followers instagram ini adalah (real akun)
-                      bukan bot
-                    </li>
-                    <li>One Time In ( Followers akan masuk dalam 1 waktu)</li>
-                    <li>Estimasi selesai : Normal 1-2 hari masuk</li>
-                    <li>Tidak butuh Akses Login</li>
-                    <li>Bisa digunakan untuk akun baru</li>
-                  </ol>
-                </TabPanel>
-                <TabPanel>
-                  <ol>
-                    <li>Layanan Followers Tiktok</li>
-                    <li>
-                      Kualitas akun followers Tiktok ini adalah (real akun)
-                      bukan bot
-                    </li>
-                    <li>
-                      Rasio Drop dibawah 5% bisa dikategorikan permanent
-                      followers
-                    </li>
-                    <li>Masuk bertahap, jadi selesai tergantung orderan</li>
-                    <li>Estimasi selesai : Normal 1-2 hari masuk</li>
-                    <li>Tidak butuh Akses Login</li>
-                    <li>Bisa digunakan untuk akun baru</li>
-                  </ol>
-                </TabPanel>
-                <TabPanel>
-                  <ol>
-                    <li>Layanan followers Shopee</li>
-                    <li>Masuk bertahap, jadi selesai tergantung orderan</li>
-                    <li>Estimasi selesai : Normal 1-3</li>
-                    <li>Tidak butuh Akses Login</li>
-                    <li>Bisa digunakan untuk akun baru</li>
-                  </ol>
-                </TabPanel>
-                {/* <TabPanel>
-                  <ol>
-                    <li>Layanan followers Shopee</li>
-                    <li>Masuk bertahap, jadi selesai tergantung orderan</li>
-                    <li>Estimasi selesai : Normal 1-3</li>
-                    <li>Tidak butuh Akses Login</li>
-                    <li>Bisa digunakan untuk akun baru</li>
-                  </ol>
-                </TabPanel> */}
-              </TabPanels>
-            </Tabs>
-          </Center>
+          <Accordion allowToggle>
+            <AccordionItem>
+              <h2>
+                <AccordionButton
+                  _expanded={{ bg: 'lightblue', color: 'black' }}
+                >
+                  <Box flex="1" textAlign="left">
+                    INFORMASI FOLLOWERS INSTAGRAM
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <OrderedList>
+                  <ListItem>
+                    Penjelasan dibawah ini untuk layanan Followers Instagram
+                    Indonesia (Username Indonesia)
+                  </ListItem>
+                  <ListItem>
+                    Kualitas akun followers instagram ini adalah (real akun)
+                    bukan bot
+                  </ListItem>
+                  <ListItem>
+                    One Time In ( Followers akan masuk dalam 1 waktu)
+                  </ListItem>
+                  <ListItem>Estimasi selesai : Normal 3-7 hari masuk</ListItem>
+                  <ListItem>Tidak butuh Akses Login</ListItem>
+                  <ListItem>Bisa digunakan untuk akun baru</ListItem>
+                  <ListItem>
+                    Dan ada melayani req akun siap pakai 20k-200k harga range 1, 1-8 juta
+                    tergantung spesifikasi akun. SEMUA NEGO
+                  </ListItem>
+                </OrderedList>
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+              <h2>
+                <AccordionButton
+                  _expanded={{ bg: 'lightblue', color: 'black' }}
+                >
+                  <Box flex="1" textAlign="left">
+                    INFORMASI FOLLOWERS TIKTOK
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <OrderedList>
+                  <ListItem>Layanan Followers Tiktok</ListItem>
+                  <ListItem>
+                    KuaListItemtas akun followers Tiktok ini adalah (real akun)
+                    bukan bot
+                  </ListItem>
+                  <ListItem>
+                    Rasio Drop dibawah 5% bisa dikategorikan permanent followers
+                  </ListItem>
+                  <ListItem>
+                    Masuk bertahap, jadi selesai tergantung orderan
+                  </ListItem>
+                  <ListItem>Estimasi selesai : Normal 3-7 hari masuk</ListItem>
+                  <ListItem>Tidak butuh Akses Login</ListItem>
+                  <ListItem>Bisa digunakan untuk akun baru</ListItem>
+                </OrderedList>
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+              <h2>
+                <AccordionButton
+                  _expanded={{ bg: 'lightblue', color: 'black' }}
+                >
+                  <Box flex="1" textAlign="left">
+                    INFORMASI FOLLOWERS SHOPEE
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <OrderedList>
+                  <ListItem>Layanan followers Shopee</ListItem>
+                  <ListItem>
+                    Masuk bertahap, jadi selesai tergantung orderan
+                  </ListItem>
+                  <ListItem>Estimasi selesai : Normal 3-7</ListItem>
+                  <ListItem>Tidak butuh Akses Login</ListItem>
+                  <ListItem>Bisa digunakan untuk akun baru</ListItem>
+                </OrderedList>
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+              <h2>
+                <AccordionButton
+                  _expanded={{ bg: 'lightblue', color: 'black' }}
+                >
+                  <Box flex="1" textAlign="left">
+                    CARA ORDER DAN KETENTUAN LAIN
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <OrderedList>
+                  <ListItem>
+                    Tentukan jenis dan jumlah layanan yang anda pilih
+                  </ListItem>
+                  <ListItem>Hubungi Admin melalui chat whatsapp</ListItem>
+                  <ListItem>
+                    Isi Format order yang diberikan oleh admin
+                  </ListItem>
+                  <ListItem>
+                    Admin menghitung total biaya pemesanan & menginfokan kepada
+                    anda
+                  </ListItem>
+                  <ListItem>
+                    Anda melakukan pelunasan tagihan dan konfirmasi dengan
+                    mengirimkan bukti pembayaran/transfer
+                  </ListItem>
+                  <ListItem>
+                    Setelah menerima konfirmasi pembayaran kami akan segera
+                    memproses pesanan anda
+                  </ListItem>
+                  <ListItem>
+                    Pesanan anda akan masuk 1-2 hari setelah admin konfirmasi ke
+                    listing antrian
+                  </ListItem>
+                  <ListItem>
+                    Jika dalam 2 hari pesanan belum masuk bisa segera konfirmasi
+                    ke admin untuk di urus
+                  </ListItem>
+                  <ListItem>
+                    Bisa Refund full payment jika pesanan sama sekali tidak
+                    masuk dalam 3 hari
+                  </ListItem>
+                </OrderedList>
+                <Text as={'p'} mt={'5'}>
+                  Metode Pembayaran yang tersedia:
+                </Text>
+                <UnorderedList>
+                  <ListItem>BANK BCA: 5075183540</ListItem>
+                  <ListItem>BANK BNI: 0892257483</ListItem>
+                  <ListItem>DANA: 082335179753</ListItem>
+                  <ListItem>OVO: 082335179753</ListItem>
+                  <ListItem>SEMUA ATAS NAMA FARIZAL</ListItem>
+                </UnorderedList>
+                <UnorderedList mt={'5'}>
+                  <ListItem>
+                    Selama proses akun mohon jangan di private (harus publik)
+                  </ListItem>
+                  <ListItem>
+                    Selama proses mohon jangan ganti username selama proses
+                  </ListItem>
+                  <ListItem>
+                    Selama proses mohon jangan di dobel/bersamaan dengan jasa
+                    lain agar tidak terjadi error
+                  </ListItem>
+                  <ListItem>
+                    Kalau buru-buru/deadline mepet tidak disarankan untuk order
+                  </ListItem>
+                  <ListItem>
+                    Jika dalam 3x24 Jam Followers belum masuk dapat mengajukan
+                    Refund
+                  </ListItem>
+                </UnorderedList>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
         </Stack>
       </Container>
     </>
