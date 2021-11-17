@@ -48,7 +48,7 @@ const Testimony = ({ testimonies }) => {
 };
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/testimonies');
+  const res = await fetch('http://zeylosociale.vercel.app//api/testimonies');
   const testimonies = await res.json();
   return {
     props: {
