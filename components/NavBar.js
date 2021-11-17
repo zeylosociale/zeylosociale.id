@@ -19,6 +19,7 @@ const Links = [
   { title: 'Home', href: '/' },
   { title: 'Product', href: '/product' },
   { title: 'Order', href: '/order' },
+  { title: 'Testimony', href: '/testimony'},
   { title: 'About', href: '/about' }
 ];
 
