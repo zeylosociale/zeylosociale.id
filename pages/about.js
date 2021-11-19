@@ -30,7 +30,7 @@ export default function About() {
             fontSize={{ base: 'md', lg: 'lg' }}
             color={'gray.500'}
           >
-            zeylosociale adalah jasa dan layanan social media yang siap untuk
+            <Text as={'b'}>Zeylosociale</Text> adalah jasa dan layanan social media yang siap untuk
             membangun dan mengembangkan akun social media milik anda/ perusahaan
             anda. Kami menyediakan jasa pada platfrom seperi Instagram, Tiktok,
             Twitter, dan Shopee. Seluruh Optimasi seperti meningkatkan
