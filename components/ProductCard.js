@@ -16,14 +16,8 @@ const ProductCard = ({ title, items, imageUrl }) => {
       <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
         <Image src={imageUrl} alt="social-media" height={200} width={400} />
         <Box p="6">
-          <Box
-            mt="1"
-            fontWeight="semibold"
-            as="h4"
-            lineHeight="tight"
-            isTruncated
-          >
-            <Center>{title}</Center>
+          <Box mt="1" fontWeight="semibold" as="h5" lineHeight="tight">
+            <Text align="center">{title}</Text>
           </Box>
           <Box>
             <VStack mt={5}>

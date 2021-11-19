@@ -109,7 +109,7 @@ const Product = () => {
               items={items2}
             />
             <ProductCard
-              title="Akun Instagram Indo"
+              title="Akun Instagram Siap Pakai Indo"
               imageUrl={image.ig}
               items={items3}
             />
@@ -204,7 +204,7 @@ const Product = () => {
                   <ListItem>
                     Masuk bertahap, jadi selesai tergantung orderan
                   </ListItem>
-                  <ListItem>Estimasi selesai : Normal 3-7 hari masuk</ListItem>
+                  <ListItem>Estimasi selesai : Normal 1-2 hari</ListItem>
                   <ListItem>Tidak butuh Akses Login</ListItem>
                   <ListItem>Bisa digunakan untuk akun baru</ListItem>
                 </OrderedList>
@@ -228,7 +228,7 @@ const Product = () => {
                   <ListItem>
                     Masuk bertahap, jadi selesai tergantung orderan
                   </ListItem>
-                  <ListItem>Estimasi selesai : Normal 3-7</ListItem>
+                  <ListItem>Estimasi selesai : Normal 1 x 24 Jam</ListItem>
                   <ListItem>Tidak butuh Akses Login</ListItem>
                   <ListItem>Bisa digunakan untuk akun baru</ListItem>
                 </OrderedList>

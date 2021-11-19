@@ -88,7 +88,7 @@ export default function Index() {
               items={items2}
             />
             <ProductCard
-              title="Akun Instagram Indo"
+              title="Akun Instagram Siap Pakai Indo"
               imageUrl={image.ig}
               items={items3}
             />
