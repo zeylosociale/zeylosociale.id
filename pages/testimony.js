@@ -37,7 +37,7 @@ const Testimony = ({ testimonies }) => {
                 lineHeight="0"
                 _hover={{ boxShadow: 'dark-lg' }}
               >
-                <Image src={data} height={600} width={400} alt={data} />
+                <Image src={`/img/testimony/${data}.jpeg`} height={600} width={400} alt={data} />
               </WrapItem>
             ))}
           </Wrap>
