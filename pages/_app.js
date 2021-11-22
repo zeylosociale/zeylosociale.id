@@ -31,15 +31,10 @@ function MyApp({ Component, pageProps }) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <NextSeo
-          config={{
-            title:
-              'Pusat Jual Followers Aktif Dan Layanan Sosial Media Bergaransi 100%',
-            titleTemplate: ' %s | Zeylosociale.id',
-            defaultTitle:
-              'Pusat Jual Followers Aktif Dan Layanan Sosial Media Bergaransi 100%',
-            description:
-              'Dapatkan pelanggan baru dengan meluaskan jangkauan bisnis dengan layanan kami untuk mempermudah bisnis anda. Tidak perlu untuk menghabiskan banyak waktu dan tenaga hanya dalam memulai bisnis. Harga aman di kantong. Garansi 100% dan uang kembali.'
-          }}
+          title="Pusat Jual Followers Aktif Dan Layanan Sosial Media Bergaransi 100%"
+          description="Dapatkan pelanggan baru dengan meluaskan jangkauan bisnis dengan layanan kami untuk mempermudah bisnis anda. Tidak perlu untuk menghabiskan banyak waktu dan tenaga hanya dalam memulai bisnis. Harga aman di kantong. Garansi 100% dan uang kembali."
+          canonical="https://zeylosociale.com"
+          titleTemplate=" %s | Zeylosociale.id"
           openGraph={{
             type: 'article',
             locale: 'id_ID',
