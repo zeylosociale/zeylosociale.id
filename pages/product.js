@@ -173,8 +173,8 @@ const Product = () => {
                   <ListItem>Tidak butuh Akses Login</ListItem>
                   <ListItem>Bisa digunakan untuk akun baru</ListItem>
                   <ListItem>
-                    Dan ada melayani req akun siap pakai 20k-200k harga range 1, 1-8 juta
-                    tergantung spesifikasi akun. SEMUA NEGO
+                    Dan ada melayani req akun siap pakai 20k-200k harga range 1,
+                    1-8 juta tergantung spesifikasi akun. SEMUA NEGO
                   </ListItem>
                 </OrderedList>
               </AccordionPanel>
@@ -195,7 +195,7 @@ const Product = () => {
                 <OrderedList>
                   <ListItem>Layanan Followers Tiktok</ListItem>
                   <ListItem>
-                    KuaListItemtas akun followers Tiktok ini adalah (real akun)
+                    KuaListas Item akun followers Tiktok ini adalah (real akun)
                     bukan bot
                   </ListItem>
                   <ListItem>
