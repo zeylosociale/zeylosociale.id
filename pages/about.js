@@ -7,7 +7,6 @@ export default function About() {
     <>
       <Head>
         <title>About - Zeylosociale.id</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container maxW={'container.xl'}>
         <Stack
@@ -30,17 +29,17 @@ export default function About() {
             fontSize={{ base: 'md', lg: 'lg' }}
             color={'gray.500'}
           >
-            <Text as={'b'}>Zeylosociale</Text> adalah jasa dan layanan social media yang siap untuk
-            membangun dan mengembangkan akun social media milik anda/ perusahaan
-            anda. Kami menyediakan jasa pada platfrom seperi Instagram, Tiktok,
-            Twitter, dan Shopee. Seluruh Optimasi seperti meningkatkan
-            Followers, Likes, maupun engagement lainnya bisa kami lakukan untuk
-            anda. Cukup hubungi kami melalui whatsapp dan jelaskan tentang
-            platfrom apa yang akan anda optimasi dan kami akan memberikan solusi
-            dan saran yang terbaik untuk anda. Harga setiap layanan kami memang
-            bukan yang termurah karena kualitas juga tidak murahan, kami selalu
-            memberikan pelayanan yang terbaik dan maksimal untuk setiap orderan
-            dari konsumen kami.
+            <Text as={'b'}>Zeylosociale</Text> adalah jasa dan layanan social
+            media yang siap untuk membangun dan mengembangkan akun social media
+            milik anda/ perusahaan anda. Kami menyediakan jasa pada platfrom
+            seperi Instagram, Tiktok, Twitter, dan Shopee. Seluruh Optimasi
+            seperti meningkatkan Followers, Likes, maupun engagement lainnya
+            bisa kami lakukan untuk anda. Cukup hubungi kami melalui whatsapp
+            dan jelaskan tentang platfrom apa yang akan anda optimasi dan kami
+            akan memberikan solusi dan saran yang terbaik untuk anda. Harga
+            setiap layanan kami memang bukan yang termurah karena kualitas juga
+            tidak murahan, kami selalu memberikan pelayanan yang terbaik dan
+            maksimal untuk setiap orderan dari konsumen kami.
           </Text>
           <Heading
             textAlign={'right'}

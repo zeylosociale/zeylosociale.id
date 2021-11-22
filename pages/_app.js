@@ -24,20 +24,28 @@ function MyApp({ Component, pageProps }) {
       <ChakraProvider theme={theme}>
         <Navbar />
         <Head>
-          <meta charset="UTF-8" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <NextSeo
+          config={{
+            title:
+              'Pusat Jual Followers Aktif Dan Layanan Sosial Media Bergaransi 100%',
+            titleTemplate: ' %s | Zeylosociale.id',
+            defaultTitle:
+              'Pusat Jual Followers Aktif Dan Layanan Sosial Media Bergaransi 100%',
+            description:
+              'Dapatkan pelanggan baru dengan meluaskan jangkauan bisnis dengan layanan kami untuk mempermudah bisnis anda. Tidak perlu untuk menghabiskan banyak waktu dan tenaga hanya dalam memulai bisnis. Harga aman di kantong. Garansi 100% dan uang kembali.'
+          }}
           openGraph={{
             type: 'article',
             locale: 'id_ID',
-            title:
-              'Jual Followers Instagram - Aktif Indonesia - Zeylosociale.id',
+            title: 'Jual Followers Instagram Aktif Indonesia - Zeylosociale.id',
             description:
-              'Jasa optimasi sosial media untuk mengembangkan bisnis anda. Jual followers Instagram, 1000 Followers cuma 85.000 Rupiah, tanpa password. Real Aktif Indonesia. dapatkan layanan lain hanya di website kami',
+              'Dapatkan pelanggan baru dengan meluaskan jangkauan bisnis dengan layanan kami untuk mempermudah bisnis anda. Tidak perlu untuk menghabiskan banyak waktu dan tenaga hanya dalam memulai bisnis. Harga aman di kantong. Garansi 100% dan uang kembali.',
             url: 'https://zeylosociale.com',
             site_name: 'zeylosociale.com',
             images: [

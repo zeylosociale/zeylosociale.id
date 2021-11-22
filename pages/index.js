@@ -68,8 +68,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Zeylosociale.id - Jasa Optimasi Sosial Media Terbaik</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Zeylosociale.id - Pusat Jual Follower Aktif Garansi 100%</title>
       </Head>
       <Hero />
       <Benefit />

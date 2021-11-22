@@ -18,7 +18,6 @@ export default function Order() {
     <>
       <Head>
         <title>Order - Zeylosociale.id</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container maxW={'container.xl'}>
         <Stack
