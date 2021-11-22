@@ -195,7 +195,7 @@ const Product = () => {
                 <OrderedList>
                   <ListItem>Layanan Followers Tiktok</ListItem>
                   <ListItem>
-                    KuaListas Item akun followers Tiktok ini adalah (real akun)
+                    Kualitas Item akun followers Tiktok ini adalah (real akun)
                     bukan bot
                   </ListItem>
                   <ListItem>
