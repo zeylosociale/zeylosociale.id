@@ -7,16 +7,20 @@ import {
   Wrap,
   WrapItem
 } from '@chakra-ui/layout';
+import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import React from 'react';
 import Title from '../components/Title';
 
+const pageMeta = {
+  title: `Zeylosociale.id - Testimony`,
+  description: `Zeylosociale memiliki banyak sekalai customer dengan testimoni terpercaya`
+};
+
 const Testimony = ({ testimonies }) => {
   return (
     <>
-      <Head>
-        <title>Testimony - Zeylosociale.id</title>
-      </Head>
+      <NextSeo {...pageMeta} />
       <Container maxW={'container.xl'}>
         <Stack
           as={Box}

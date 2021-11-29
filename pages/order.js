@@ -10,15 +10,19 @@ import {
   Stack,
   Link
 } from '@chakra-ui/react';
+import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import React from 'react';
+
+const pageMeta = {
+  title: `Zeylosociale.id - Order`,
+  description: `Zeylosociale menyediakan cara order yang mudah dan terpercaya`
+};
 
 export default function Order() {
   return (
     <>
-      <Head>
-        <title>Order - Zeylosociale.id</title>
-      </Head>
+      <NextSeo {...pageMeta} />
       <Container maxW={'container.xl'}>
         <Stack
           as={Box}

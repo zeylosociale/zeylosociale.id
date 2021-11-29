@@ -8,7 +8,7 @@ import {
   HStack,
   Tag,
   useColorModeValue,
-  Container,
+  Container
 } from '@chakra-ui/react';
 
 const BlogTags = (props) => {
@@ -75,12 +75,7 @@ const About = () => {
           justifyContent="center"
           marginTop={{ base: '3', sm: '0' }}
         >
-          <BlogTags
-            tags={[
-              'Zeylosociale',
-              'Sosial Media',
-            ]}
-          />
+          <BlogTags tags={['Zeylosociale', 'Sosial Media']} />
           <Heading marginTop="1">
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               Zeylosociale.id - Jasa Optimasi Media Sosial
@@ -94,11 +89,15 @@ const About = () => {
             align="justify"
           >
             <Text as={'b'}>Zeylosociale.id</Text> menyediakan jasa dan layanan
-            optimasi bisnis melalui social media, anda dapat menggunakan jasa
+            optimasi bisnis melalui sosial media, anda dapat menggunakan jasa
             kami untuk menambah traffic social media anda seperti Instagram,
             Tiktok, Shopee dan lain sebagainya. Dengan harga yang terjangkau
             kualitas kami tidak kalah dengan penyedia jasa optimasi media sosial
-            lainnya dengan jasa kami.
+            lainnya dengan jasa kami. Dapatkan pelanggan baru dengan meluaskan
+            jangkauan bisnis dengan layanan kami untuk mempermudah bisnis anda.
+            Tidak perlu untuk menghabiskan banyak waktu dan tenaga hanya dalam
+            memulai bisnis. Harga aman di kantong. Garansi 100% dan uang
+            kembali.
           </Text>
           <Text
             as="p"

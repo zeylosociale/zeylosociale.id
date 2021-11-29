@@ -20,6 +20,7 @@ import {
 import ProductCard from '../components/ProductCard';
 import Head from 'next/head';
 import React from 'react';
+import { NextSeo } from 'next-seo';
 
 const Product = () => {
   const image = {
@@ -74,11 +75,15 @@ const Product = () => {
     '5k = 325k',
     '10k = 600k'
   ];
+
+  const pageMeta = {
+    title: `Zeylosociale.id - Product`,
+    description: `Zeylosociale menyediakan berbagai macam platfrom sosial media untuk dioptimasi`
+  };
+
   return (
     <>
-      <Head>
-        <title>Product - Zeylosociale.id</title>
-      </Head>
+      <NextSeo {...pageMeta} />
       <Container maxW={'container.xl'}>
         <Stack
           as={Box}

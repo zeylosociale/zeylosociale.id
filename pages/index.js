@@ -11,6 +11,7 @@ import {
   Stack
 } from '@chakra-ui/react';
 import ProductCard from '../components/ProductCard';
+import { NextSeo } from 'next-seo';
 
 export default function Index() {
   const image = {
@@ -65,11 +66,15 @@ export default function Index() {
     '5k = 325k',
     '10k = 600k'
   ];
+
+  const pageMeta = {
+    title: `Zeylosociale.id - Pusat Jual Follower Aktif Garansi 100%`,
+    description: `Dapatkan pelanggan baru dengan meluaskan jangkauan bisnis dengan layanan kami untuk mempermudah bisnis anda. Tidak perlu untuk menghabiskan banyak waktu dan tenaga hanya dalam memulai bisnis. Harga aman di kantong. Garansi 100% dan uang kembali.`
+  };
+
   return (
     <>
-      <Head>
-        <title>Zeylosociale.id - Pusat Jual Follower Aktif Garansi 100%</title>
-      </Head>
+      <NextSeo {...pageMeta} />
       <Hero />
       <Benefit />
       <About />

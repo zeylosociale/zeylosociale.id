@@ -23,7 +23,7 @@ const ProductCard = ({ title, items, imageUrl }) => {
             <VStack mt={5}>
               {items.map((data, index) => (
                 <>
-                  <Divider orientation="horizontal" />
+                  <Divider key={index} orientation="horizontal" />
                   <Text key={index}>{data}</Text>
                 </>
               ))}

@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <NextSeo
+        {/* <NextSeo
           title="Pusat Jual Followers Aktif Dan Layanan Sosial Media Bergaransi 100%"
           description="Dapatkan pelanggan baru dengan meluaskan jangkauan bisnis dengan layanan kami untuk mempermudah bisnis anda. Tidak perlu untuk menghabiskan banyak waktu dan tenaga hanya dalam memulai bisnis. Harga aman di kantong. Garansi 100% dan uang kembali."
           canonical="https://zeylosociale.com"
@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }) {
             maxImagePreview: 'none',
             maxVideoPreview: -1
           }}
-        />
+        /> */}
         <Component {...pageProps} />
         <Footer />
       </ChakraProvider>
