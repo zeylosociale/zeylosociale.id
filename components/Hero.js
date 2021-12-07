@@ -44,9 +44,9 @@ export default function Hero() {
               </Text>{' '}
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-              Dapatkan pelanggan baru dengan mudah. Tidak perlu menghabiskan
+              Dapatkan pelanggan baru dengan mudah. Tak perlu menghabiskan
               banyak waktu dan tenaga dalam memulai bisnis. Harga aman di
-              kantong. Garansi 100% dan uang kembali.
+              kantong. Garansi 100% uang kembali.
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
               <Link
