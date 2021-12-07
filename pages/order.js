@@ -15,7 +15,7 @@ import Head from 'next/head';
 import React from 'react';
 
 const pageMeta = {
-  title: `Zeylosociale.id - Order`,
+  title: `Zeylosociale - Order`,
   description: `Zeylosociale menyediakan cara order yang mudah dan terpercaya`
 };
 

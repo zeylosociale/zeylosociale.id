@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo';
 import React from 'react';
 
 const pageMeta = {
-  title: `Zeylosociale.id - About`,
+  title: `Zeylosociale - About`,
   description: `Zeylosociale adalah jasa dan layanan socialmedia yang siap untuk membangun dan mengembangkan akun social media milik anda/ perusahaan anda.`
 };
 

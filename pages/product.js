@@ -77,7 +77,7 @@ const Product = () => {
   ];
 
   const pageMeta = {
-    title: `Zeylosociale.id - Product`,
+    title: `Zeylosociale - Product`,
     description: `Zeylosociale menyediakan berbagai macam platfrom sosial media untuk dioptimasi`
   };
 

@@ -68,8 +68,9 @@ export default function Index() {
   ];
 
   const pageMeta = {
-    title: `Zeylosociale.id - Pusat Jual Follower Aktif Garansi 100%`,
-    description: `Dapatkan pelanggan baru dengan meluaskan jangkauan bisnis dengan layanan kami untuk mempermudah bisnis anda. Tidak perlu untuk menghabiskan banyak waktu dan tenaga hanya dalam memulai bisnis. Harga aman di kantong. Garansi 100% dan uang kembali.`
+    title: `Zeylosociale - Pusat Jual Follower Aktif Garansi 100%`,
+    description: `Dapatkan pelanggan baru dengan mudah. Tidak perlu menghabiskan banyak waktu dan tenaga dalam memulai bisnis. Harga aman di kantong. Garansi 100% dan uang kembali.`,
+    canonical: 'https://www.zeylosociale.com/'
   };
 
   return (

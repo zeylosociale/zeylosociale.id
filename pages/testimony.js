@@ -13,7 +13,7 @@ import React from 'react';
 import Title from '../components/Title';
 
 const pageMeta = {
-  title: `Zeylosociale.id - Testimony`,
+  title: `Zeylosociale - Testimony`,
   description: `Zeylosociale memiliki banyak sekalai customer dengan testimoni terpercaya`
 };
 
